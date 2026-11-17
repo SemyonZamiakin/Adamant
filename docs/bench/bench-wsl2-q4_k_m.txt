@@ -1,0 +1,18 @@
+[38;2;45;212;191m◆ Adamant SIMD-VIC[0m 0.1.0 · by Euclase
+cpu       Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+scalar  t=1  rep 0  prefill    1.7 tok/s  generate   1.71 tok/s    585.9 ms/tok    1.08 GB/s
+avx2    t=1  rep 0  prefill   13.1 tok/s  generate  13.03 tok/s     76.8 ms/tok    8.21 GB/s
+avx2    t=1  rep 1  prefill   13.2 tok/s  generate  13.02 tok/s     76.8 ms/tok    8.20 GB/s
+avx2    t=1  rep 2  prefill   13.1 tok/s  generate  13.05 tok/s     76.7 ms/tok    8.22 GB/s
+scalar  t=4  rep 0  prefill    5.6 tok/s  generate   5.90 tok/s    169.6 ms/tok    3.71 GB/s
+avx2    t=4  rep 0  prefill   35.8 tok/s  generate  34.23 tok/s     29.2 ms/tok   21.56 GB/s
+avx2    t=4  rep 1  prefill   40.3 tok/s  generate  38.30 tok/s     26.1 ms/tok   24.12 GB/s
+avx2    t=4  rep 2  prefill   39.6 tok/s  generate  38.25 tok/s     26.1 ms/tok   24.09 GB/s
+scalar  t=8  rep 0  prefill    9.8 tok/s  generate   9.62 tok/s    103.9 ms/tok    6.06 GB/s
+avx2    t=8  rep 0  prefill   42.6 tok/s  generate  45.04 tok/s     22.2 ms/tok   28.37 GB/s
+avx2    t=8  rep 1  prefill   46.0 tok/s  generate  44.96 tok/s     22.2 ms/tok   28.32 GB/s
+avx2    t=8  rep 2  prefill   46.0 tok/s  generate  45.18 tok/s     22.1 ms/tok   28.45 GB/s
+scalar  t=12 rep 0  prefill   11.6 tok/s  generate  11.76 tok/s     85.0 ms/tok    7.41 GB/s
+avx2    t=12 rep 0  prefill   47.0 tok/s  generate  44.69 tok/s     22.4 ms/tok   28.15 GB/s
+avx2    t=12 rep 1  prefill   45.4 tok/s  generate  44.80 tok/s     22.3 ms/tok   28.22 GB/s
+avx2    t=12 rep 2  prefill   43.8 tok/s  generate  43.32 tok/s     23.1 ms/tok   27.29 GB/s

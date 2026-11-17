@@ -1,0 +1,6 @@
+build*/
+models/
+*.gguf
+__pycache__/
+*.pyc
+/docs/bench/*.tmp

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-label="Matrix-vector throughput, scalar vs AVX2">
+<rect width="1200" height="410" rx="16" fill="#0F2933"/>
+<text x="40" y="46" fill="#F8FAFC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Matrix × vector throughput, GB/s of weights read</text>
+<text x="40" y="72" fill="#8FB3BC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="14">Intel Core i9-9900K, Windows 11 · 16384×8192 weights per format (larger than L3) · measured with adamant kbench</text>
+<rect x="40" y="94" width="12" height="12" rx="3" fill="#D06A4C"/><text x="64" y="104" fill="#8FB3BC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13">scalar reference</text><rect x="189.2" y="94" width="12" height="12" rx="3" fill="#0E9F90"/><text x="213.2" y="104" fill="#8FB3BC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13">AVX2</text><line x1="252.0" y1="100" x2="270.0" y2="100" stroke="#B08A14" stroke-width="2" stroke-dasharray="4 3"/><text x="276.0" y="104" fill="#8FB3BC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="13">memory read bandwidth, AVX2 loads (same machine)</text>
+<text x="100.0" y="132" fill="#F8FAFC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">1 thread</text>
+<line x1="100.0" y1="144" x2="100.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="100.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">0</text>
+<line x1="194.0" y1="144" x2="194.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="194.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">10</text>
+<line x1="288.0" y1="144" x2="288.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="288.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">20</text>
+<line x1="382.0" y1="144" x2="382.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="382.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">30</text>
+<line x1="476.0" y1="144" x2="476.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="476.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">40</text>
+<line x1="570.0" y1="144" x2="570.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="570.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">50</text>
+<line x1="309.5" y1="140" x2="309.5" y2="354" stroke="#B08A14" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="305.5" y="132" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">read 22.3</text>
+<text x="88.0" y="173" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="13">Q4_K</text>
+<path d="M100.0,148.0 H107.8 Q111.8,148.0 111.8,152.0 V162.0 Q111.8,166.0 107.8,166.0 H100.0 Z" fill="#D06A4C"/>
+<text x="117.8" y="162" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">1.3</text>
+<path d="M100.0,168.0 H171.5 Q175.5,168.0 175.5,172.0 V182.0 Q175.5,186.0 171.5,186.0 H100.0 Z" fill="#0E9F90"/>
+<text x="181.5" y="182" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">8.0</text>
+<text x="88.0" y="225" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="13">Q6_K</text>
+<path d="M100.0,200.0 H103.7 Q107.3,200.0 107.3,203.7 V214.3 Q107.3,218.0 103.7,218.0 H100.0 Z" fill="#D06A4C"/>
+<text x="113.3" y="214" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">0.8</text>
+<path d="M100.0,220.0 H203.0 Q207.0,220.0 207.0,224.0 V234.0 Q207.0,238.0 203.0,238.0 H100.0 Z" fill="#0E9F90"/>
+<text x="213.0" y="234" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">11.4</text>
+<text x="88.0" y="277" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="13">Q8_0</text>
+<path d="M100.0,252.0 H118.1 Q122.1,252.0 122.1,256.0 V266.0 Q122.1,270.0 118.1,270.0 H100.0 Z" fill="#D06A4C"/>
+<text x="128.1" y="266" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">2.4</text>
+<path d="M100.0,272.0 H201.8 Q205.8,272.0 205.8,276.0 V286.0 Q205.8,290.0 201.8,290.0 H100.0 Z" fill="#0E9F90"/>
+<text x="211.8" y="286" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">11.3</text>
+<text x="88.0" y="329" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="13">F16</text>
+<path d="M100.0,304.0 H107.3 Q111.3,304.0 111.3,308.0 V318.0 Q111.3,322.0 107.3,322.0 H100.0 Z" fill="#D06A4C"/>
+<text x="117.3" y="318" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">1.2</text>
+<path d="M100.0,324.0 H240.0 Q244.0,324.0 244.0,328.0 V338.0 Q244.0,342.0 240.0,342.0 H100.0 Z" fill="#0E9F90"/>
+<text x="250.0" y="338" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">15.3</text>
+<text x="640.0" y="132" fill="#F8FAFC" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">8 threads</text>
+<line x1="640.0" y1="144" x2="640.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="640.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">0</text>
+<line x1="734.0" y1="144" x2="734.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="734.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">10</text>
+<line x1="828.0" y1="144" x2="828.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="828.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">20</text>
+<line x1="922.0" y1="144" x2="922.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="922.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">30</text>
+<line x1="1016.0" y1="144" x2="1016.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="1016.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">40</text>
+<line x1="1110.0" y1="144" x2="1110.0" y2="352" stroke="#1B4556" stroke-width="1"/>
+<text x="1110.0" y="370" text-anchor="middle" fill="#5E828C" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">50</text>
+<line x1="975.0" y1="140" x2="975.0" y2="354" stroke="#B08A14" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="971.0" y="132" text-anchor="end" fill="#8FB3BC" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">read 35.6</text>
+<path d="M640.0,148.0 H703.1 Q707.1,148.0 707.1,152.0 V162.0 Q707.1,166.0 703.1,166.0 H640.0 Z" fill="#D06A4C"/>
+<text x="713.1" y="162" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">7.1</text>
+<path d="M640.0,168.0 H950.9 Q954.9,168.0 954.9,172.0 V182.0 Q954.9,186.0 950.9,186.0 H640.0 Z" fill="#0E9F90"/>
+<text x="960.9" y="182" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">33.5</text>
+<path d="M640.0,200.0 H679.2 Q683.2,200.0 683.2,204.0 V214.0 Q683.2,218.0 679.2,218.0 H640.0 Z" fill="#D06A4C"/>
+<text x="689.2" y="214" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">4.6</text>
+<path d="M640.0,220.0 H966.7 Q970.7,220.0 970.7,224.0 V234.0 Q970.7,238.0 966.7,238.0 H640.0 Z" fill="#0E9F90"/>
+<text x="976.7" y="234" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">35.2</text>
+<path d="M640.0,252.0 H756.1 Q760.1,252.0 760.1,256.0 V266.0 Q760.1,270.0 756.1,270.0 H640.0 Z" fill="#D06A4C"/>
+<text x="766.1" y="266" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">12.8</text>
+<path d="M640.0,272.0 H910.2 Q914.2,272.0 914.2,276.0 V286.0 Q914.2,290.0 910.2,290.0 H640.0 Z" fill="#0E9F90"/>
+<text x="920.2" y="286" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">29.2</text>
+<path d="M640.0,304.0 H700.8 Q704.8,304.0 704.8,308.0 V318.0 Q704.8,322.0 700.8,322.0 H640.0 Z" fill="#D06A4C"/>
+<text x="710.8" y="318" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">6.9</text>
+<path d="M640.0,324.0 H947.5 Q951.5,324.0 951.5,328.0 V338.0 Q951.5,342.0 947.5,342.0 H640.0 Z" fill="#0E9F90"/>
+<text x="957.5" y="338" fill="#F8FAFC" stroke="#0F2933" stroke-width="4" paint-order="stroke" font-family="Consolas, 'JetBrains Mono', monospace" font-size="12">33.1</text>
+</svg>

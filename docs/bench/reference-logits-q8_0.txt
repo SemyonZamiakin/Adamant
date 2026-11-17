@@ -1,0 +1,8 @@
+model            models/tinyllama-1.1b-chat-v1.0.Q8_0.gguf
+tokens           14: [1, 450, 7483, 310, 3444, 338, 3681, 29892, 322, 278, 7483, 310, 5546, 338]
+cosine           0.999964
+max |diff|       0.1986  (logit range -16.38 .. 18.69)
+mean |diff|      0.0349
+top-1            reference 20377  adamant 20377  MATCH
+top-10 overlap   10/10
+KL(ref || adamant) over the softmax: 3.41e-06 nats

@@ -1,0 +1,119 @@
+{"t":0.0007,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":20.31,"ram_used_gb":18.758,"ram_total_gb":31.936,"cores":[34.4,6.2,34.4,18.8,20.3,14.1,23.4,9.4,20.3,12.5,25.0,10.9,28.1,14.1,28.1,25.0]}
+{"t":0.9365,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":11.91,"ram_used_gb":16.835,"ram_total_gb":31.936,"cores":[12.5,10.9,3.1,3.1,54.7,6.2,23.4,0.0,10.9,3.1,15.6,9.4,3.1,18.8,14.1,1.6]}
+{"t":1.9323,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":15.72,"ram_used_gb":17.066,"ram_total_gb":31.936,"cores":[18.8,1.6,18.8,10.9,50.0,1.6,60.9,4.7,15.6,15.6,14.1,4.7,6.2,12.5,12.5,3.1]}
+{"t":2.1019,"ev":"session","model":"tinyllama_tinyllama-1.1b-chat-v1.0","isa":"avx2","threads":8,"weight_bytes":629847168}
+{"t":2.7417,"ev":"prompt","n":28,"prefill_ns":863229700}
+{"t":2.7417,"ev":"token","seq":0,"id":29909,"fwd_ns":30829632,"text":"A"}
+{"t":2.7726,"ev":"token","seq":1,"id":10808,"fwd_ns":26971300,"text":" CPU"}
+{"t":2.8036,"ev":"token","seq":2,"id":7090,"fwd_ns":26784300,"text":" cache"}
+{"t":2.8339,"ev":"token","seq":3,"id":338,"fwd_ns":26465700,"text":" is"}
+{"t":2.8493,"ev":"token","seq":4,"id":263,"fwd_ns":27808500,"text":" a"}
+{"t":2.8801,"ev":"token","seq":5,"id":13201,"fwd_ns":27466800,"text":" temporary"}
+{"t":2.9107,"ev":"token","seq":6,"id":8635,"fwd_ns":27447900,"text":" storage"}
+{"t":2.9407,"ev":"token","seq":7,"id":4038,"fwd_ns":25592600,"text":" area"}
+{"t":2.9408,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":60.25,"ram_used_gb":17.464,"ram_total_gb":31.936,"cores":[35.9,40.6,53.1,53.1,43.8,78.1,79.7,81.2,53.1,54.7,75.0,73.4,43.8,54.7,62.5,81.2]}
+{"t":2.9705,"ev":"token","seq":8,"id":2629,"fwd_ns":25326100,"text":" within"}
+{"t":2.9860,"ev":"token","seq":9,"id":278,"fwd_ns":25270000,"text":" the"}
+{"t":3.0311,"ev":"token","seq":10,"id":10808,"fwd_ns":25022100,"text":" CPU"}
+{"t":3.0312,"ev":"token","seq":11,"id":393,"fwd_ns":25549000,"text":" that"}
+{"t":3.0620,"ev":"token","seq":12,"id":14422,"fwd_ns":25261400,"text":" stores"}
+{"t":3.0929,"ev":"token","seq":13,"id":13672,"fwd_ns":25272100,"text":" frequently"}
+{"t":3.1079,"ev":"token","seq":14,"id":20592,"fwd_ns":25145800,"text":" accessed"}
+{"t":3.1389,"ev":"token","seq":15,"id":848,"fwd_ns":25832300,"text":" data"}
+{"t":3.1695,"ev":"token","seq":16,"id":322,"fwd_ns":25887900,"text":" and"}
+{"t":3.1850,"ev":"token","seq":17,"id":11994,"fwd_ns":25117200,"text":" instructions"}
+{"t":3.2160,"ev":"token","seq":18,"id":29889,"fwd_ns":25094200,"text":"."}
+{"t":3.2469,"ev":"token","seq":19,"id":739,"fwd_ns":26137700,"text":" It"}
+{"t":3.2623,"ev":"token","seq":20,"id":338,"fwd_ns":24927000,"text":" is"}
+{"t":3.2931,"ev":"token","seq":21,"id":8688,"fwd_ns":25294400,"text":" designed"}
+{"t":3.3238,"ev":"token","seq":22,"id":304,"fwd_ns":25148300,"text":" to"}
+{"t":3.3393,"ev":"token","seq":23,"id":6210,"fwd_ns":24923900,"text":" speed"}
+{"t":3.3704,"ev":"token","seq":24,"id":701,"fwd_ns":26381000,"text":" up"}
+{"t":3.4013,"ev":"token","seq":25,"id":278,"fwd_ns":25807800,"text":" the"}
+{"t":3.4164,"ev":"token","seq":26,"id":8225,"fwd_ns":27575200,"text":" execution"}
+{"t":3.4472,"ev":"token","seq":27,"id":310,"fwd_ns":25926900,"text":" of"}
+{"t":3.4923,"ev":"token","seq":28,"id":11994,"fwd_ns":25631900,"text":" instructions"}
+{"t":3.4924,"ev":"token","seq":29,"id":491,"fwd_ns":25076100,"text":" by"}
+{"t":3.5222,"ev":"token","seq":30,"id":9098,"fwd_ns":26667800,"text":" quickly"}
+{"t":3.5521,"ev":"token","seq":31,"id":5663,"fwd_ns":25335600,"text":" retr"}
+{"t":3.5818,"ev":"token","seq":32,"id":15387,"fwd_ns":25082600,"text":"ieving"}
+{"t":3.5973,"ev":"token","seq":33,"id":278,"fwd_ns":25021400,"text":" the"}
+{"t":3.6280,"ev":"token","seq":34,"id":848,"fwd_ns":25023900,"text":" data"}
+{"t":3.6590,"ev":"token","seq":35,"id":515,"fwd_ns":25906500,"text":" from"}
+{"t":3.6745,"ev":"token","seq":36,"id":278,"fwd_ns":25163300,"text":" the"}
+{"t":3.7043,"ev":"token","seq":37,"id":7090,"fwd_ns":25892300,"text":" cache"}
+{"t":3.7499,"ev":"token","seq":38,"id":746,"fwd_ns":25662700,"text":" when"}
+{"t":3.7499,"ev":"token","seq":39,"id":372,"fwd_ns":25195700,"text":" it"}
+{"t":3.7797,"ev":"token","seq":40,"id":338,"fwd_ns":24751200,"text":" is"}
+{"t":3.8094,"ev":"token","seq":41,"id":4312,"fwd_ns":26345200,"text":" needed"}
+{"t":3.8248,"ev":"token","seq":42,"id":29889,"fwd_ns":25478000,"text":"."}
+{"t":3.8556,"ev":"token","seq":43,"id":450,"fwd_ns":26167700,"text":" The"}
+{"t":3.8865,"ev":"token","seq":44,"id":7090,"fwd_ns":25686900,"text":" cache"}
+{"t":3.9173,"ev":"token","seq":45,"id":338,"fwd_ns":25819800,"text":" is"}
+{"t":3.9326,"ev":"token","seq":46,"id":12234,"fwd_ns":26727200,"text":" typically"}
+{"t":3.9482,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":55.47,"ram_used_gb":17.488,"ram_total_gb":31.936,"cores":[28.1,40.6,59.4,56.2,54.7,67.2,73.4,90.6,34.4,46.9,60.9,68.8,50.0,39.1,53.1,64.1]}
+{"t":3.9635,"ev":"token","seq":47,"id":5982,"fwd_ns":26510400,"text":" located"}
+{"t":3.9944,"ev":"token","seq":48,"id":2978,"fwd_ns":26510300,"text":" near"}
+{"t":4.0098,"ev":"token","seq":49,"id":278,"fwd_ns":25962600,"text":" the"}
+{"t":4.0396,"ev":"token","seq":50,"id":10808,"fwd_ns":26406800,"text":" CPU"}
+{"t":4.0694,"ev":"token","seq":51,"id":29915,"fwd_ns":25984600,"text":"'"}
+{"t":4.1003,"ev":"token","seq":52,"id":29879,"fwd_ns":27535800,"text":"s"}
+{"t":4.1156,"ev":"token","seq":53,"id":3370,"fwd_ns":25983300,"text":" memory"}
+{"t":4.1464,"ev":"token","seq":54,"id":29892,"fwd_ns":26333100,"text":","}
+{"t":4.1772,"ev":"token","seq":55,"id":322,"fwd_ns":27085100,"text":" and"}
+{"t":4.2224,"ev":"token","seq":56,"id":372,"fwd_ns":25624600,"text":" it"}
+{"t":4.2224,"ev":"token","seq":57,"id":338,"fwd_ns":25581500,"text":" is"}
+{"t":4.2522,"ev":"token","seq":58,"id":4784,"fwd_ns":26818900,"text":" updated"}
+{"t":4.2832,"ev":"token","seq":59,"id":13672,"fwd_ns":27340700,"text":" frequently"}
+{"t":4.3141,"ev":"token","seq":60,"id":304,"fwd_ns":25645200,"text":" to"}
+{"t":4.3440,"ev":"token","seq":61,"id":9801,"fwd_ns":25640300,"text":" ensure"}
+{"t":4.3594,"ev":"token","seq":62,"id":393,"fwd_ns":25265500,"text":" that"}
+{"t":4.3903,"ev":"token","seq":63,"id":278,"fwd_ns":25628000,"text":" the"}
+{"t":4.4057,"ev":"token","seq":64,"id":848,"fwd_ns":25285800,"text":" data"}
+{"t":4.4355,"ev":"token","seq":65,"id":338,"fwd_ns":26325600,"text":" is"}
+{"t":4.4807,"ev":"token","seq":66,"id":2337,"fwd_ns":26169000,"text":" always"}
+{"t":4.4807,"ev":"token","seq":67,"id":701,"fwd_ns":25171100,"text":" up"}
+{"t":4.5105,"ev":"token","seq":68,"id":29899,"fwd_ns":25452300,"text":"-"}
+{"t":4.5554,"ev":"token","seq":69,"id":517,"fwd_ns":26559000,"text":"to"}
+{"t":4.5709,"ev":"token","seq":70,"id":29899,"fwd_ns":25323700,"text":"-"}
+{"t":4.5865,"ev":"token","seq":71,"id":1256,"fwd_ns":26532900,"text":"date"}
+{"t":4.6174,"ev":"token","seq":72,"id":29889,"fwd_ns":27489400,"text":"."}
+{"t":4.6482,"ev":"token","seq":73,"id":450,"fwd_ns":26791700,"text":" The"}
+{"t":4.6791,"ev":"token","seq":74,"id":7090,"fwd_ns":26604900,"text":" cache"}
+{"t":4.6945,"ev":"token","seq":75,"id":338,"fwd_ns":25661000,"text":" is"}
+{"t":4.7253,"ev":"token","seq":76,"id":8688,"fwd_ns":25965900,"text":" designed"}
+{"t":4.7557,"ev":"token","seq":77,"id":304,"fwd_ns":25403900,"text":" to"}
+{"t":4.7708,"ev":"token","seq":78,"id":3787,"fwd_ns":25431300,"text":" store"}
+{"t":4.8017,"ev":"token","seq":79,"id":848,"fwd_ns":26248300,"text":" data"}
+{"t":4.8465,"ev":"token","seq":80,"id":363,"fwd_ns":26274100,"text":" for"}
+{"t":4.8465,"ev":"token","seq":81,"id":263,"fwd_ns":26024600,"text":" a"}
+{"t":4.8764,"ev":"token","seq":82,"id":9078,"fwd_ns":25360000,"text":" limited"}
+{"t":4.9072,"ev":"token","seq":83,"id":931,"fwd_ns":26231100,"text":" time"}
+{"t":4.9523,"ev":"token","seq":84,"id":29892,"fwd_ns":26732400,"text":","}
+{"t":4.9524,"ev":"token","seq":85,"id":12234,"fwd_ns":26238000,"text":" typically"}
+{"t":4.9524,"ev":"metrics","src":"Euclase Monitor (EMS1 on /euclase-monitor)","cpu":57.03,"ram_used_gb":17.467,"ram_total_gb":31.936,"cores":[40.6,45.3,62.5,67.2,48.4,73.4,75.0,90.6,34.4,48.4,68.8,67.2,40.6,39.1,48.4,62.5]}
+{"t":4.9823,"ev":"token","seq":86,"id":2820,"fwd_ns":26385400,"text":" around"}
+{"t":5.0131,"ev":"token","seq":87,"id":29871,"fwd_ns":25438000,"text":" "}
+{"t":5.0580,"ev":"token","seq":88,"id":29896,"fwd_ns":26549000,"text":"1"}
+{"t":5.0580,"ev":"token","seq":89,"id":29900,"fwd_ns":26078600,"text":"0"}
+{"t":5.0878,"ev":"token","seq":90,"id":29899,"fwd_ns":25510000,"text":"-"}
+{"t":5.1188,"ev":"token","seq":91,"id":29896,"fwd_ns":26866600,"text":"1"}
+{"t":5.1498,"ev":"token","seq":92,"id":29900,"fwd_ns":27063200,"text":"0"}
+{"t":5.1796,"ev":"token","seq":93,"id":29900,"fwd_ns":26370700,"text":"0"}
+{"t":5.1952,"ev":"token","seq":94,"id":3064,"fwd_ns":27017700,"text":" times"}
+{"t":5.2261,"ev":"token","seq":95,"id":8473,"fwd_ns":27994100,"text":" faster"}
+{"t":5.2570,"ev":"token","seq":96,"id":1135,"fwd_ns":28039800,"text":" than"}
+{"t":5.2878,"ev":"token","seq":97,"id":278,"fwd_ns":27171500,"text":" the"}
+{"t":5.3033,"ev":"token","seq":98,"id":3370,"fwd_ns":27847900,"text":" memory"}
+{"t":5.3341,"ev":"token","seq":99,"id":29889,"fwd_ns":27595700,"text":"."}
+{"t":5.3640,"ev":"token","seq":100,"id":450,"fwd_ns":26548300,"text":" The"}
+{"t":5.3948,"ev":"token","seq":101,"id":7090,"fwd_ns":26913300,"text":" cache"}
+{"t":5.4102,"ev":"token","seq":102,"id":338,"fwd_ns":26282100,"text":" is"}
+{"t":5.4412,"ev":"token","seq":103,"id":1304,"fwd_ns":26445900,"text":" used"}
+{"t":5.4719,"ev":"token","seq":104,"id":304,"fwd_ns":26439600,"text":" to"}
+{"t":5.5020,"ev":"token","seq":105,"id":10032,"fwd_ns":26287800,"text":" reduce"}
+{"t":5.5171,"ev":"token","seq":106,"id":278,"fwd_ns":27859700,"text":" the"}
+{"t":5.5469,"ev":"token","seq":107,"id":931,"fwd_ns":25900900,"text":" time"}
+{"t":5.5776,"ev":"token","seq":108,"id":3734,"fwd_ns":26159000,"text":" required"}
+{"t":5.6083,"ev":"token","seq":109,"id":304,"fwd_ns":26248900,"text":" to"}
+{"t":5.6083,"ev":"end","n":110,"gen_ns":2846219600,"dropped":0}

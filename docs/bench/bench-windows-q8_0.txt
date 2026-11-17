@@ -1,0 +1,30 @@
+[38;2;45;212;191m◆ Adamant SIMD-VIC[0m 0.1.0 · by Euclase
+cpu       Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+scalar  t=1  rep 0  prefill    1.9 tok/s  generate   2.04 tok/s    489.9 ms/tok    2.24 GB/s
+avx2    t=1  rep 0  prefill    9.3 tok/s  generate   8.92 tok/s    112.1 ms/tok    9.81 GB/s
+avx2    t=1  rep 1  prefill    9.2 tok/s  generate   8.57 tok/s    116.7 ms/tok    9.42 GB/s
+avx2    t=1  rep 2  prefill    8.8 tok/s  generate   9.11 tok/s    109.8 ms/tok   10.01 GB/s
+scalar  t=2  rep 0  prefill    3.8 tok/s  generate   3.74 tok/s    267.6 ms/tok    4.11 GB/s
+avx2    t=2  rep 0  prefill   14.5 tok/s  generate  14.01 tok/s     71.4 ms/tok   15.40 GB/s
+avx2    t=2  rep 1  prefill   13.2 tok/s  generate  14.59 tok/s     68.6 ms/tok   16.03 GB/s
+avx2    t=2  rep 2  prefill   13.6 tok/s  generate  15.03 tok/s     66.5 ms/tok   16.52 GB/s
+scalar  t=4  rep 0  prefill    7.0 tok/s  generate   6.84 tok/s    146.2 ms/tok    7.52 GB/s
+avx2    t=4  rep 0  prefill   18.7 tok/s  generate  19.22 tok/s     52.0 ms/tok   21.13 GB/s
+avx2    t=4  rep 1  prefill   20.6 tok/s  generate  20.08 tok/s     49.8 ms/tok   22.07 GB/s
+avx2    t=4  rep 2  prefill   20.4 tok/s  generate  20.10 tok/s     49.8 ms/tok   22.09 GB/s
+scalar  t=6  rep 0  prefill    9.4 tok/s  generate   9.23 tok/s    108.3 ms/tok   10.15 GB/s
+avx2    t=6  rep 0  prefill   23.5 tok/s  generate  23.77 tok/s     42.1 ms/tok   26.12 GB/s
+avx2    t=6  rep 1  prefill   24.8 tok/s  generate  24.50 tok/s     40.8 ms/tok   26.93 GB/s
+avx2    t=6  rep 2  prefill   24.4 tok/s  generate  24.49 tok/s     40.8 ms/tok   26.91 GB/s
+scalar  t=8  rep 0  prefill   10.9 tok/s  generate  11.23 tok/s     89.0 ms/tok   12.35 GB/s
+avx2    t=8  rep 0  prefill   25.7 tok/s  generate  25.25 tok/s     39.6 ms/tok   27.75 GB/s
+avx2    t=8  rep 1  prefill   25.3 tok/s  generate  24.16 tok/s     41.4 ms/tok   26.56 GB/s
+avx2    t=8  rep 2  prefill   23.4 tok/s  generate  21.95 tok/s     45.6 ms/tok   24.12 GB/s
+scalar  t=12 rep 0  prefill   12.9 tok/s  generate  12.79 tok/s     78.2 ms/tok   14.06 GB/s
+avx2    t=12 rep 0  prefill   26.1 tok/s  generate  25.98 tok/s     38.5 ms/tok   28.56 GB/s
+avx2    t=12 rep 1  prefill   26.4 tok/s  generate  25.85 tok/s     38.7 ms/tok   28.41 GB/s
+avx2    t=12 rep 2  prefill   26.2 tok/s  generate  24.84 tok/s     40.3 ms/tok   27.30 GB/s
+scalar  t=16 rep 0  prefill   10.9 tok/s  generate   9.48 tok/s    105.5 ms/tok   10.41 GB/s
+avx2    t=16 rep 0  prefill   21.1 tok/s  generate  17.12 tok/s     58.4 ms/tok   18.82 GB/s
+avx2    t=16 rep 1  prefill   19.0 tok/s  generate  16.69 tok/s     59.9 ms/tok   18.34 GB/s
+avx2    t=16 rep 2  prefill   14.3 tok/s  generate   7.33 tok/s    136.4 ms/tok    8.05 GB/s

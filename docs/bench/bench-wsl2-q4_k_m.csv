@@ -1,0 +1,17 @@
+model,isa,threads,rep,prompt_tokens,prefill_tok_s,gen_tokens,gen_tok_s,ms_per_token,weight_gb_s,weight_bytes_per_token
+tinyllama_tinyllama-1.1b-chat-v1.0,scalar,1,0,8,1.689,16,1.7069,585.865,1.0751,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,1,0,8,13.093,64,13.0279,76.758,8.2056,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,1,1,8,13.192,64,13.0194,76.809,8.2002,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,1,2,8,13.072,64,13.0456,76.654,8.2167,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,scalar,4,0,8,5.606,16,5.8966,169.588,3.7140,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,4,0,8,35.779,64,34.2265,29.217,21.5574,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,4,1,8,40.336,64,38.3003,26.109,24.1234,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,4,2,8,39.613,64,38.2484,26.145,24.0906,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,scalar,8,0,8,9.786,16,9.6204,103.945,6.0594,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,8,0,8,42.574,64,45.0450,22.200,28.3714,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,8,1,8,46.040,64,44.9556,22.244,28.3152,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,8,2,8,45.967,64,45.1753,22.136,28.4535,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,scalar,12,0,8,11.583,16,11.7582,85.047,7.4059,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,12,0,8,46.963,64,44.6882,22.377,28.1467,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,12,1,8,45.421,64,44.7967,22.323,28.2151,629847168
+tinyllama_tinyllama-1.1b-chat-v1.0,avx2,12,2,8,43.794,64,43.3241,23.082,27.2875,629847168

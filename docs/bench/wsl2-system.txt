@@ -1,0 +1,2 @@
+Linux 6.18.33.2-microsoft-standard-WSL2
+gcc-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0

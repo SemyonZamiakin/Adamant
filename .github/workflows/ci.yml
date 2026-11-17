@@ -1,0 +1,89 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  linux:
+    name: linux / ${{ matrix.cc }} / ${{ matrix.build }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {cc: gcc, cxx: g++, build: Release}
+          - {cc: gcc, cxx: g++, build: Debug}
+          - {cc: clang, cxx: clang++, build: Release}
+    env:
+      CC: ${{ matrix.cc }}
+      CXX: ${{ matrix.cxx }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: CPU
+        run: grep -m1 "model name" /proc/cpuinfo; grep -o -m1 -w "avx2\|fma\|f16c" /proc/cpuinfo | sort -u | tr '\n' ' '
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=${{ matrix.build }} -DADAMANT_WERROR=ON
+      - name: Build
+        run: cmake --build build -j"$(nproc)"
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+      - name: Scalar-only path (ADAMANT_ISA=scalar)
+        run: ADAMANT_ISA=scalar ./build/test_model
+
+  sanitizers:
+    name: linux / clang / ${{ matrix.san }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        san: ["address,undefined", "thread"]
+    env:
+      CC: clang
+      CXX: clang++
+      ASAN_OPTIONS: detect_leaks=1
+      UBSAN_OPTIONS: print_stacktrace=1:halt_on_error=1
+      TSAN_OPTIONS: halt_on_error=1
+    steps:
+      - uses: actions/checkout@v4
+      # Recent kernels randomize mmap more than older sanitizer runtimes expect.
+      - name: Relax ASLR entropy for sanitizers
+        run: sudo sysctl -w vm.mmap_rnd_bits=28
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DADAMANT_WERROR=ON -DADAMANT_SANITIZE=${{ matrix.san }}
+      - name: Build
+        run: cmake --build build -j"$(nproc)"
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+  no-avx2:
+    name: linux / gcc / built without AVX2
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DADAMANT_WERROR=ON -DADAMANT_AVX2=OFF
+      - name: Build and test
+        run: cmake --build build -j"$(nproc)" && ctest --test-dir build --output-on-failure
+
+  windows:
+    name: windows / mingw-w64 gcc (${{ matrix.sys }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sys: [MINGW64, UCRT64]
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: ${{ matrix.sys }}
+          pacboy: gcc:p cmake:p ninja:p
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DADAMANT_WERROR=ON
+      - name: Build
+        run: cmake --build build
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+      - name: Kernel benchmark smoke run
+        run: ./build/adamant.exe kbench -t 1 --min-time 0.05 --rows 512 --cols 1024

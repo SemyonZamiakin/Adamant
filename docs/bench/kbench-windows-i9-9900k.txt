@@ -1,0 +1,42 @@
+[38;2;45;212;191m◆ Adamant SIMD-VIC[0m 0.1.0 · by Euclase
+cpu       Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+
+memory read bandwidth (1.00 GiB buffer, sequential, 256-bit AVX2 loads)
+  read   t=1     22.29 GB/s
+  read   t=8     35.64 GB/s
+
+large (weights far larger than a 16 MiB L3: DRAM-bound): 16384 x 8192
+  Q4_K  scalar t=1     60042.4 us/matvec     1.26 GB/s     4.47 GFLOP/s
+  Q4_K  scalar t=8     10575.6 us/matvec     7.14 GB/s    25.38 GFLOP/s
+  Q4_K  avx2   t=1      9394.2 us/matvec     8.04 GB/s    28.57 GFLOP/s
+  Q4_K  avx2   t=8      2253.8 us/matvec    33.50 GB/s   119.10 GFLOP/s
+  Q6_K  scalar t=1    140942.5 us/matvec     0.78 GB/s     1.90 GFLOP/s
+  Q6_K  scalar t=8     23973.8 us/matvec     4.59 GB/s    11.20 GFLOP/s
+  Q6_K  avx2   t=1      9673.7 us/matvec    11.38 GB/s    27.75 GFLOP/s
+  Q6_K  avx2   t=8      3129.4 us/matvec    35.18 GB/s    85.78 GFLOP/s
+  Q8_0  scalar t=1     60588.3 us/matvec     2.35 GB/s     4.43 GFLOP/s
+  Q8_0  scalar t=8     11160.2 us/matvec    12.78 GB/s    24.05 GFLOP/s
+  Q8_0  avx2   t=1     12670.8 us/matvec    11.25 GB/s    21.19 GFLOP/s
+  Q8_0  avx2   t=8      4888.4 us/matvec    29.17 GB/s    54.91 GFLOP/s
+  F16   scalar t=1    223160.9 us/matvec     1.20 GB/s     1.20 GFLOP/s
+  F16   scalar t=8     38922.0 us/matvec     6.90 GB/s     6.90 GFLOP/s
+  F16   avx2   t=1     17520.6 us/matvec    15.32 GB/s    15.32 GFLOP/s
+  F16   avx2   t=8      8099.6 us/matvec    33.14 GB/s    33.14 GFLOP/s
+
+cache-resident: 1024 x 2048
+  Q4_K  scalar t=1      1013.7 us/matvec     1.16 GB/s     4.14 GFLOP/s
+  Q4_K  scalar t=8       272.3 us/matvec     4.33 GB/s    15.40 GFLOP/s
+  Q4_K  avx2   t=1       129.6 us/matvec     9.10 GB/s    32.35 GFLOP/s
+  Q4_K  avx2   t=8        25.7 us/matvec    45.94 GB/s   163.34 GFLOP/s
+  Q6_K  scalar t=1      2268.0 us/matvec     0.76 GB/s     1.85 GFLOP/s
+  Q6_K  scalar t=8       520.1 us/matvec     3.31 GB/s     8.06 GFLOP/s
+  Q6_K  avx2   t=1       116.2 us/matvec    14.81 GB/s    36.10 GFLOP/s
+  Q6_K  avx2   t=8        22.9 us/matvec    75.15 GB/s   183.23 GFLOP/s
+  Q8_0  scalar t=1       993.3 us/matvec     2.24 GB/s     4.22 GFLOP/s
+  Q8_0  scalar t=8       265.7 us/matvec     8.39 GB/s    15.79 GFLOP/s
+  Q8_0  avx2   t=1       141.2 us/matvec    15.78 GB/s    29.70 GFLOP/s
+  Q8_0  avx2   t=8        27.8 us/matvec    80.01 GB/s   150.60 GFLOP/s
+  F16   scalar t=1      3527.8 us/matvec     1.19 GB/s     1.19 GFLOP/s
+  F16   scalar t=8       764.6 us/matvec     5.49 GB/s     5.49 GFLOP/s
+  F16   avx2   t=1       138.7 us/matvec    30.25 GB/s    30.25 GFLOP/s
+  F16   avx2   t=8        25.1 us/matvec   167.39 GB/s   167.39 GFLOP/s
